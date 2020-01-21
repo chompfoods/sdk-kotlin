@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**foodBrandedIdPhpGet**](DefaultApi.md#foodBrandedIdPhpGet) | **GET** /food/branded/id.php | Get a branded food item using an ID number
 [**foodBrandedNamePhpGet**](DefaultApi.md#foodBrandedNamePhpGet) | **GET** /food/branded/name.php | Get a branded food item by name
 [**foodBrandedSearchPhpGet**](DefaultApi.md#foodBrandedSearchPhpGet) | **GET** /food/branded/search.php | Get data for branded food items using various search parameters
-[**ingredientSearchPhpGet**](DefaultApi.md#ingredientSearchPhpGet) | **GET** /ingredient/search.php | Get raw/generic food ingredient item(s)
+[**foodIngredientSearchPhpGet**](DefaultApi.md#foodIngredientSearchPhpGet) | **GET** /food/ingredient/search.php | Get raw/generic food ingredient item(s)
 
 <a name="foodBrandedBarcodePhpGet"></a>
 # **foodBrandedBarcodePhpGet**
@@ -228,9 +228,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="ingredientSearchPhpGet"></a>
-# **ingredientSearchPhpGet**
-> IngredientObject ingredientSearchPhpGet(find, list, raw, limit)
+<a name="foodIngredientSearchPhpGet"></a>
+# **foodIngredientSearchPhpGet**
+> IngredientObject foodIngredientSearchPhpGet(find, list, raw, limit)
 
 Get raw/generic food ingredient item(s)
 
@@ -248,13 +248,13 @@ val list : kotlin.Boolean = true // kotlin.Boolean | Specify if you are searchin
 val raw : kotlin.Boolean = true // kotlin.Boolean | Specify if you only want data for raw ingredients.  __Example:__ true _(defaults to true)_ 
 val limit : kotlin.Int = 56 // kotlin.Int | Set maximum number of records you want the API to return.  ___Important Note:__ Setting this to \"1\" will return 1 record per search term._  __Example:__ 1 _(defaults to 1, max is 3)_ 
 try {
-    val result : IngredientObject = apiInstance.ingredientSearchPhpGet(find, list, raw, limit)
+    val result : IngredientObject = apiInstance.foodIngredientSearchPhpGet(find, list, raw, limit)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling DefaultApi#ingredientSearchPhpGet")
+    println("4xx response calling DefaultApi#foodIngredientSearchPhpGet")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DefaultApi#ingredientSearchPhpGet")
+    println("5xx response calling DefaultApi#foodIngredientSearchPhpGet")
     e.printStackTrace()
 }
 ```

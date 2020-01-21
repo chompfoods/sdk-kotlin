@@ -39,7 +39,7 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**foodBrandedIdPhpGet**](docs/DefaultApi.md#foodbrandedidphpget) | **GET** /food/branded/id.php | Get a branded food item using an ID number
 *DefaultApi* | [**foodBrandedNamePhpGet**](docs/DefaultApi.md#foodbrandednamephpget) | **GET** /food/branded/name.php | Get a branded food item by name
 *DefaultApi* | [**foodBrandedSearchPhpGet**](docs/DefaultApi.md#foodbrandedsearchphpget) | **GET** /food/branded/search.php | Get data for branded food items using various search parameters
-*DefaultApi* | [**ingredientSearchPhpGet**](docs/DefaultApi.md#ingredientsearchphpget) | **GET** /ingredient/search.php | Get raw/generic food ingredient item(s)
+*DefaultApi* | [**foodIngredientSearchPhpGet**](docs/DefaultApi.md#foodingredientsearchphpget) | **GET** /food/ingredient/search.php | Get raw/generic food ingredient item(s)
 
 <a name="documentation-for-models"></a>
 ## Documentation for Models

@@ -21,10 +21,10 @@ package io.swagger.client.models
  * @param min Minimum nutrient value
  * @param max Maximum nutrient value
  * @param median Median nutrient value
+ * @param rank Nutrient rank
  * @param dataPoints Number of observations on which the value is based
  * @param footnote Comments on any unusual aspect of the food nutrient. Examples might include why a nutrient value is different than typically expected.
- * @param source Description of the nutrient source
- * @param description Description of how the food nutrient value was obtained
+ * @param description Description of the nutrient source
  */
 data class BrandedFoodObjectNutrientsUsda (
 
@@ -42,13 +42,13 @@ data class BrandedFoodObjectNutrientsUsda (
     val max: java.math.BigDecimal? = null,
     /* Median nutrient value */
     val median: java.math.BigDecimal? = null,
+    /* Nutrient rank */
+    val rank: kotlin.Int? = null,
     /* Number of observations on which the value is based */
     val dataPoints: kotlin.Int? = null,
     /* Comments on any unusual aspect of the food nutrient. Examples might include why a nutrient value is different than typically expected. */
     val footnote: kotlin.String? = null,
     /* Description of the nutrient source */
-    val source: kotlin.String? = null,
-    /* Description of how the food nutrient value was obtained */
     val description: kotlin.String? = null
 ) {
 }
