@@ -14,17 +14,14 @@ package io.swagger.client.models
 
 /**
  * An object containing serving information for this item
- * @param size Serving size
- * @param measurementUnit Serving measurement unit (e.g. if measure is 3 tsp, the unit is tsp)
+ * @param size Serving size with measurement unit (e.g. if measure is 3 tsp, the unit is tsp)
  * @param sizeFulltext Serving size description
  * @param total Total servings
  */
 data class BrandedFoodObjectServing (
 
-    /* Serving size */
-    val size: kotlin.Int? = null,
-    /* Serving measurement unit (e.g. if measure is 3 tsp, the unit is tsp) */
-    val measurementUnit: kotlin.String? = null,
+    /* Serving size with measurement unit (e.g. if measure is 3 tsp, the unit is tsp) */
+    val size: kotlin.String? = null,
     /* Serving size description */
     val sizeFulltext: kotlin.String? = null,
     /* Total servings */
