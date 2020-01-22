@@ -65,6 +65,8 @@ Class | Method | HTTP request | Description
  - [io.swagger.client.models.BrandedFoodObjectPackagingPhotosNutrition](docs/BrandedFoodObjectPackagingPhotosNutrition.md)
  - [io.swagger.client.models.BrandedFoodObjectPortions](docs/BrandedFoodObjectPortions.md)
  - [io.swagger.client.models.BrandedFoodObjectServing](docs/BrandedFoodObjectServing.md)
+ - [io.swagger.client.models.BrandedFoodObjectServingChomp](docs/BrandedFoodObjectServingChomp.md)
+ - [io.swagger.client.models.BrandedFoodObjectServingUsda](docs/BrandedFoodObjectServingUsda.md)
  - [io.swagger.client.models.IngredientObject](docs/IngredientObject.md)
  - [io.swagger.client.models.IngredientObjectItems](docs/IngredientObjectItems.md)
  - [io.swagger.client.models.IngredientObjectNutrients](docs/IngredientObjectNutrients.md)

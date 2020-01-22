@@ -11,17 +11,20 @@
 */
 package io.swagger.client.models
 
-import io.swagger.client.models.BrandedFoodObjectServingChomp
-import io.swagger.client.models.BrandedFoodObjectServingUsda
 
 /**
- * An object containing serving information for this item
- * @param chomp 
- * @param usda 
+ * Serving information from the USDA
+ * @param size Serving size
+ * @param measurementUnit Measurement unit for each serving (e.g. if measure is 3 tsp, the unit is tsp)
+ * @param sizeFulltext Serving size description
  */
-data class BrandedFoodObjectServing (
+data class BrandedFoodObjectServingUsda (
 
-    val chomp: BrandedFoodObjectServingChomp? = null,
-    val usda: BrandedFoodObjectServingUsda? = null
+    /* Serving size */
+    val size: kotlin.String? = null,
+    /* Measurement unit for each serving (e.g. if measure is 3 tsp, the unit is tsp) */
+    val measurementUnit: kotlin.String? = null,
+    /* Serving size description */
+    val sizeFulltext: kotlin.String? = null
 ) {
 }
