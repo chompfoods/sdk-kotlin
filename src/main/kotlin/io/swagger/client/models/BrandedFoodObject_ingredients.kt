@@ -13,15 +13,15 @@ package io.swagger.client.models
 
 
 /**
- * An object containing basic packaging information about this item
- * @param quantity Package quantity
- * @param size Package size
+ * An object containing this item's ingredients in order of highest value to least
+ * @param chomp This item's ingredients as seen on ChompThis.com
+ * @param usda This branded food item's ingredients according to the USDA
  */
-data class BrandedFoodObjectPackage (
+data class BrandedFoodObjectIngredients (
 
-    /* Package quantity */
-    val quantity: kotlin.Int? = null,
-    /* Package size */
-    val size: kotlin.String? = null
+    /* This item's ingredients as seen on ChompThis.com */
+    val chomp: kotlin.String? = null,
+    /* This branded food item's ingredients according to the USDA */
+    val usda: kotlin.String? = null
 ) {
 }

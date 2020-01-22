@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **barcode** | [**kotlin.String**](.md) | EAN/UPC barcode |  [optional]
 **name** | [**kotlin.String**](.md) | Item name as provided by brand owner or as shown on packaging |  [optional]
 **brand** | [**kotlin.String**](.md) | The brand name that owns this item |  [optional]
-**ingredients** | [**kotlin.String**](.md) | Ingredients in order of highest value to least |  [optional]
+**ingredients** | [**BrandedFoodObjectIngredients**](BrandedFoodObjectIngredients.md) |  |  [optional]
 **&#x60;package&#x60;** | [**BrandedFoodObjectPackage**](BrandedFoodObjectPackage.md) |  |  [optional]
 **serving** | [**BrandedFoodObjectServing**](BrandedFoodObjectServing.md) |  |  [optional]
 **categories** | [**kotlin.Array&lt;kotlin.String&gt;**](.md) |  |  [optional]

@@ -53,6 +53,7 @@ Class | Method | HTTP request | Description
  - [io.swagger.client.models.BrandedFoodObjectDietLabelsGlutenFree](docs/BrandedFoodObjectDietLabelsGlutenFree.md)
  - [io.swagger.client.models.BrandedFoodObjectDietLabelsVegan](docs/BrandedFoodObjectDietLabelsVegan.md)
  - [io.swagger.client.models.BrandedFoodObjectDietLabelsVegetarian](docs/BrandedFoodObjectDietLabelsVegetarian.md)
+ - [io.swagger.client.models.BrandedFoodObjectIngredients](docs/BrandedFoodObjectIngredients.md)
  - [io.swagger.client.models.BrandedFoodObjectItems](docs/BrandedFoodObjectItems.md)
  - [io.swagger.client.models.BrandedFoodObjectNutrients](docs/BrandedFoodObjectNutrients.md)
  - [io.swagger.client.models.BrandedFoodObjectNutrientsChomp](docs/BrandedFoodObjectNutrientsChomp.md)

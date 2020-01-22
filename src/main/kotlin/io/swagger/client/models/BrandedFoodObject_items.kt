@@ -16,6 +16,7 @@ import io.swagger.client.models.BrandedFoodObjectComponents
 import io.swagger.client.models.BrandedFoodObjectCountryDetails
 import io.swagger.client.models.BrandedFoodObjectDietFlags
 import io.swagger.client.models.BrandedFoodObjectDietLabels
+import io.swagger.client.models.BrandedFoodObjectIngredients
 import io.swagger.client.models.BrandedFoodObjectNutrients
 import io.swagger.client.models.BrandedFoodObjectPackage
 import io.swagger.client.models.BrandedFoodObjectPackagingPhotos
@@ -27,7 +28,7 @@ import io.swagger.client.models.BrandedFoodObjectServing
  * @param barcode EAN/UPC barcode
  * @param name Item name as provided by brand owner or as shown on packaging
  * @param brand The brand name that owns this item
- * @param ingredients Ingredients in order of highest value to least
+ * @param ingredients 
  * @param &#x60;package&#x60; 
  * @param serving 
  * @param categories 
@@ -62,8 +63,7 @@ data class BrandedFoodObjectItems (
     val name: kotlin.String? = null,
     /* The brand name that owns this item */
     val brand: kotlin.String? = null,
-    /* Ingredients in order of highest value to least */
-    val ingredients: kotlin.String? = null,
+    val ingredients: BrandedFoodObjectIngredients? = null,
     val `package`: BrandedFoodObjectPackage? = null,
     val serving: BrandedFoodObjectServing? = null,
     val categories: kotlin.Array<kotlin.String>? = null,
