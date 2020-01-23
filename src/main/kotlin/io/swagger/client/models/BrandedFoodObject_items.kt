@@ -12,7 +12,6 @@
 package io.swagger.client.models
 
 import io.swagger.client.models.BrandedFoodObjectCalorieConversionFactor
-import io.swagger.client.models.BrandedFoodObjectComponents
 import io.swagger.client.models.BrandedFoodObjectCountryDetails
 import io.swagger.client.models.BrandedFoodObjectDietFlags
 import io.swagger.client.models.BrandedFoodObjectDietLabels
@@ -20,7 +19,6 @@ import io.swagger.client.models.BrandedFoodObjectIngredients
 import io.swagger.client.models.BrandedFoodObjectNutrients
 import io.swagger.client.models.BrandedFoodObjectPackage
 import io.swagger.client.models.BrandedFoodObjectPackagingPhotos
-import io.swagger.client.models.BrandedFoodObjectPortions
 import io.swagger.client.models.BrandedFoodObjectServing
 
 /**
@@ -38,8 +36,6 @@ import io.swagger.client.models.BrandedFoodObjectServing
  * @param dietLabels 
  * @param dietFlags An array of ingredient objects that were flagged while grading this item for compatibility with each diet
  * @param packagingPhotos 
- * @param components An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)
- * @param portions An array of objects containing information on discrete amounts of a food found in this item
  * @param allergens An array of ingredients in this item that may cause allergic reactions in people
  * @param brandList An array of brands we have associated with this item. Some items are sold by more than 1 brand.
  * @param countries An array of countries where this item is sold
@@ -74,10 +70,6 @@ data class BrandedFoodObjectItems (
     /* An array of ingredient objects that were flagged while grading this item for compatibility with each diet */
     val dietFlags: kotlin.Array<BrandedFoodObjectDietFlags>? = null,
     val packagingPhotos: BrandedFoodObjectPackagingPhotos? = null,
-    /* An array of objects containing the constituent parts of a food (e.g. bone is a component of meat) */
-    val components: kotlin.Array<BrandedFoodObjectComponents>? = null,
-    /* An array of objects containing information on discrete amounts of a food found in this item */
-    val portions: kotlin.Array<BrandedFoodObjectPortions>? = null,
     /* An array of ingredients in this item that may cause allergic reactions in people */
     val allergens: kotlin.Array<kotlin.String>? = null,
     /* An array of brands we have associated with this item. Some items are sold by more than 1 brand. */

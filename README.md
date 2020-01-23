@@ -46,7 +46,6 @@ Class | Method | HTTP request | Description
 
  - [io.swagger.client.models.BrandedFoodObject](docs/BrandedFoodObject.md)
  - [io.swagger.client.models.BrandedFoodObjectCalorieConversionFactor](docs/BrandedFoodObjectCalorieConversionFactor.md)
- - [io.swagger.client.models.BrandedFoodObjectComponents](docs/BrandedFoodObjectComponents.md)
  - [io.swagger.client.models.BrandedFoodObjectCountryDetails](docs/BrandedFoodObjectCountryDetails.md)
  - [io.swagger.client.models.BrandedFoodObjectDietFlags](docs/BrandedFoodObjectDietFlags.md)
  - [io.swagger.client.models.BrandedFoodObjectDietLabels](docs/BrandedFoodObjectDietLabels.md)
@@ -63,13 +62,14 @@ Class | Method | HTTP request | Description
  - [io.swagger.client.models.BrandedFoodObjectPackagingPhotosFront](docs/BrandedFoodObjectPackagingPhotosFront.md)
  - [io.swagger.client.models.BrandedFoodObjectPackagingPhotosIngredients](docs/BrandedFoodObjectPackagingPhotosIngredients.md)
  - [io.swagger.client.models.BrandedFoodObjectPackagingPhotosNutrition](docs/BrandedFoodObjectPackagingPhotosNutrition.md)
- - [io.swagger.client.models.BrandedFoodObjectPortions](docs/BrandedFoodObjectPortions.md)
  - [io.swagger.client.models.BrandedFoodObjectServing](docs/BrandedFoodObjectServing.md)
  - [io.swagger.client.models.BrandedFoodObjectServingChomp](docs/BrandedFoodObjectServingChomp.md)
  - [io.swagger.client.models.BrandedFoodObjectServingUsda](docs/BrandedFoodObjectServingUsda.md)
  - [io.swagger.client.models.IngredientObject](docs/IngredientObject.md)
+ - [io.swagger.client.models.IngredientObjectComponents](docs/IngredientObjectComponents.md)
  - [io.swagger.client.models.IngredientObjectItems](docs/IngredientObjectItems.md)
  - [io.swagger.client.models.IngredientObjectNutrients](docs/IngredientObjectNutrients.md)
+ - [io.swagger.client.models.IngredientObjectPortions](docs/IngredientObjectPortions.md)
 
 <a name="documentation-for-authorization"></a>
 ## Documentation for Authorization
