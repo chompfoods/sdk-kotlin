@@ -45,7 +45,6 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [io.swagger.client.models.BrandedFoodObject](docs/BrandedFoodObject.md)
- - [io.swagger.client.models.BrandedFoodObjectCalorieConversionFactor](docs/BrandedFoodObjectCalorieConversionFactor.md)
  - [io.swagger.client.models.BrandedFoodObjectCountryDetails](docs/BrandedFoodObjectCountryDetails.md)
  - [io.swagger.client.models.BrandedFoodObjectDietFlags](docs/BrandedFoodObjectDietFlags.md)
  - [io.swagger.client.models.BrandedFoodObjectDietLabels](docs/BrandedFoodObjectDietLabels.md)
@@ -66,6 +65,7 @@ Class | Method | HTTP request | Description
  - [io.swagger.client.models.BrandedFoodObjectServingChomp](docs/BrandedFoodObjectServingChomp.md)
  - [io.swagger.client.models.BrandedFoodObjectServingUsda](docs/BrandedFoodObjectServingUsda.md)
  - [io.swagger.client.models.IngredientObject](docs/IngredientObject.md)
+ - [io.swagger.client.models.IngredientObjectCalorieConversionFactor](docs/IngredientObjectCalorieConversionFactor.md)
  - [io.swagger.client.models.IngredientObjectComponents](docs/IngredientObjectComponents.md)
  - [io.swagger.client.models.IngredientObjectItems](docs/IngredientObjectItems.md)
  - [io.swagger.client.models.IngredientObjectNutrients](docs/IngredientObjectNutrients.md)

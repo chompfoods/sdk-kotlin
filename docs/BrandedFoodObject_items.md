@@ -11,8 +11,6 @@ Name | Type | Description | Notes
 **serving** | [**BrandedFoodObjectServing**](BrandedFoodObjectServing.md) |  |  [optional]
 **categories** | [**kotlin.Array&lt;kotlin.String&gt;**](.md) |  |  [optional]
 **nutrients** | [**BrandedFoodObjectNutrients**](BrandedFoodObjectNutrients.md) |  |  [optional]
-**calorieConversionFactor** | [**BrandedFoodObjectCalorieConversionFactor**](BrandedFoodObjectCalorieConversionFactor.md) |  |  [optional]
-**proteinConversionFactor** | [**java.math.BigDecimal**](java.math.BigDecimal.md) | The multiplication factor used to calculate protein from nitrogen |  [optional]
 **dietLabels** | [**BrandedFoodObjectDietLabels**](BrandedFoodObjectDietLabels.md) |  |  [optional]
 **dietFlags** | [**kotlin.Array&lt;BrandedFoodObjectDietFlags&gt;**](BrandedFoodObjectDietFlags.md) | An array of ingredient objects that were flagged while grading this item for compatibility with each diet |  [optional]
 **packagingPhotos** | [**BrandedFoodObjectPackagingPhotos**](BrandedFoodObjectPackagingPhotos.md) |  |  [optional]

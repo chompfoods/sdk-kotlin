@@ -11,8 +11,8 @@
 */
 package io.swagger.client.models
 
-import io.swagger.client.models.BrandedFoodObjectCalorieConversionFactor
 import io.swagger.client.models.BrandedFoodObjectDietLabels
+import io.swagger.client.models.IngredientObjectCalorieConversionFactor
 import io.swagger.client.models.IngredientObjectComponents
 import io.swagger.client.models.IngredientObjectNutrients
 import io.swagger.client.models.IngredientObjectPortions
@@ -37,7 +37,7 @@ data class IngredientObjectItems (
     val name: kotlin.String? = null,
     val categories: kotlin.Array<kotlin.String>? = null,
     val nutrients: IngredientObjectNutrients? = null,
-    val calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = null,
+    val calorieConversionFactor: IngredientObjectCalorieConversionFactor? = null,
     /* The multiplication factor used to calculate protein from nitrogen */
     val proteinConversionFactor: java.math.BigDecimal? = null,
     val dietLabels: BrandedFoodObjectDietLabels? = null,

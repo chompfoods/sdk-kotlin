@@ -11,7 +11,6 @@
 */
 package io.swagger.client.models
 
-import io.swagger.client.models.BrandedFoodObjectCalorieConversionFactor
 import io.swagger.client.models.BrandedFoodObjectCountryDetails
 import io.swagger.client.models.BrandedFoodObjectDietFlags
 import io.swagger.client.models.BrandedFoodObjectDietLabels
@@ -31,8 +30,6 @@ import io.swagger.client.models.BrandedFoodObjectServing
  * @param serving 
  * @param categories 
  * @param nutrients 
- * @param calorieConversionFactor 
- * @param proteinConversionFactor The multiplication factor used to calculate protein from nitrogen
  * @param dietLabels 
  * @param dietFlags An array of ingredient objects that were flagged while grading this item for compatibility with each diet
  * @param packagingPhotos 
@@ -62,9 +59,6 @@ data class BrandedFoodObjectItems (
     val serving: BrandedFoodObjectServing? = null,
     val categories: kotlin.Array<kotlin.String>? = null,
     val nutrients: BrandedFoodObjectNutrients? = null,
-    val calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = null,
-    /* The multiplication factor used to calculate protein from nitrogen */
-    val proteinConversionFactor: java.math.BigDecimal? = null,
     val dietLabels: BrandedFoodObjectDietLabels? = null,
     /* An array of ingredient objects that were flagged while grading this item for compatibility with each diet */
     val dietFlags: kotlin.Array<BrandedFoodObjectDietFlags>? = null,
