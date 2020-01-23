@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | [**kotlin.String**](.md) | Item name as provided by brand owner or as shown on packaging |  [optional]
 **categories** | [**kotlin.Array&lt;kotlin.String&gt;**](.md) |  |  [optional]
-**nutrients** | [**IngredientObjectNutrients**](IngredientObjectNutrients.md) |  |  [optional]
+**nutrients** | [**kotlin.Array&lt;IngredientObjectNutrients&gt;**](IngredientObjectNutrients.md) | An array containing nutrient informatio objects for this food item |  [optional]
 **calorieConversionFactor** | [**IngredientObjectCalorieConversionFactor**](IngredientObjectCalorieConversionFactor.md) |  |  [optional]
 **proteinConversionFactor** | [**java.math.BigDecimal**](java.math.BigDecimal.md) | The multiplication factor used to calculate protein from nitrogen |  [optional]
 **dietLabels** | [**BrandedFoodObjectDietLabels**](BrandedFoodObjectDietLabels.md) |  |  [optional]

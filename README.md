@@ -36,7 +36,6 @@ All URIs are relative to *https://chompthis.com/api/v2*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *DefaultApi* | [**foodBrandedBarcodePhpGet**](docs/DefaultApi.md#foodbrandedbarcodephpget) | **GET** /food/branded/barcode.php | Get a branded food item using a barcode
-*DefaultApi* | [**foodBrandedIdPhpGet**](docs/DefaultApi.md#foodbrandedidphpget) | **GET** /food/branded/id.php | Get a branded food item using an ID number
 *DefaultApi* | [**foodBrandedNamePhpGet**](docs/DefaultApi.md#foodbrandednamephpget) | **GET** /food/branded/name.php | Get a branded food item by name
 *DefaultApi* | [**foodBrandedSearchPhpGet**](docs/DefaultApi.md#foodbrandedsearchphpget) | **GET** /food/branded/search.php | Get data for branded food items using various search parameters
 *DefaultApi* | [**foodIngredientSearchPhpGet**](docs/DefaultApi.md#foodingredientsearchphpget) | **GET** /food/ingredient/search.php | Get raw/generic food ingredient item(s)
@@ -51,19 +50,14 @@ Class | Method | HTTP request | Description
  - [io.swagger.client.models.BrandedFoodObjectDietLabelsGlutenFree](docs/BrandedFoodObjectDietLabelsGlutenFree.md)
  - [io.swagger.client.models.BrandedFoodObjectDietLabelsVegan](docs/BrandedFoodObjectDietLabelsVegan.md)
  - [io.swagger.client.models.BrandedFoodObjectDietLabelsVegetarian](docs/BrandedFoodObjectDietLabelsVegetarian.md)
- - [io.swagger.client.models.BrandedFoodObjectIngredients](docs/BrandedFoodObjectIngredients.md)
  - [io.swagger.client.models.BrandedFoodObjectItems](docs/BrandedFoodObjectItems.md)
  - [io.swagger.client.models.BrandedFoodObjectNutrients](docs/BrandedFoodObjectNutrients.md)
- - [io.swagger.client.models.BrandedFoodObjectNutrientsChomp](docs/BrandedFoodObjectNutrientsChomp.md)
- - [io.swagger.client.models.BrandedFoodObjectNutrientsUsda](docs/BrandedFoodObjectNutrientsUsda.md)
  - [io.swagger.client.models.BrandedFoodObjectPackage](docs/BrandedFoodObjectPackage.md)
  - [io.swagger.client.models.BrandedFoodObjectPackagingPhotos](docs/BrandedFoodObjectPackagingPhotos.md)
  - [io.swagger.client.models.BrandedFoodObjectPackagingPhotosFront](docs/BrandedFoodObjectPackagingPhotosFront.md)
  - [io.swagger.client.models.BrandedFoodObjectPackagingPhotosIngredients](docs/BrandedFoodObjectPackagingPhotosIngredients.md)
  - [io.swagger.client.models.BrandedFoodObjectPackagingPhotosNutrition](docs/BrandedFoodObjectPackagingPhotosNutrition.md)
  - [io.swagger.client.models.BrandedFoodObjectServing](docs/BrandedFoodObjectServing.md)
- - [io.swagger.client.models.BrandedFoodObjectServingChomp](docs/BrandedFoodObjectServingChomp.md)
- - [io.swagger.client.models.BrandedFoodObjectServingUsda](docs/BrandedFoodObjectServingUsda.md)
  - [io.swagger.client.models.IngredientObject](docs/IngredientObject.md)
  - [io.swagger.client.models.IngredientObjectCalorieConversionFactor](docs/IngredientObjectCalorieConversionFactor.md)
  - [io.swagger.client.models.IngredientObjectComponents](docs/IngredientObjectComponents.md)

@@ -21,7 +21,7 @@ import io.swagger.client.models.IngredientObjectPortions
  * An object containing information for this specific item.
  * @param name Item name as provided by brand owner or as shown on packaging
  * @param categories 
- * @param nutrients 
+ * @param nutrients An array containing nutrient informatio objects for this food item
  * @param calorieConversionFactor 
  * @param proteinConversionFactor The multiplication factor used to calculate protein from nitrogen
  * @param dietLabels 
@@ -36,7 +36,8 @@ data class IngredientObjectItems (
     /* Item name as provided by brand owner or as shown on packaging */
     val name: kotlin.String? = null,
     val categories: kotlin.Array<kotlin.String>? = null,
-    val nutrients: IngredientObjectNutrients? = null,
+    /* An array containing nutrient informatio objects for this food item */
+    val nutrients: kotlin.Array<IngredientObjectNutrients>? = null,
     val calorieConversionFactor: IngredientObjectCalorieConversionFactor? = null,
     /* The multiplication factor used to calculate protein from nitrogen */
     val proteinConversionFactor: java.math.BigDecimal? = null,

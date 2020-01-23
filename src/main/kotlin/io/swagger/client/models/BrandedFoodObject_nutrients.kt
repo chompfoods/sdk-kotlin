@@ -11,19 +11,29 @@
 */
 package io.swagger.client.models
 
-import io.swagger.client.models.BrandedFoodObjectNutrientsChomp
-import io.swagger.client.models.BrandedFoodObjectNutrientsUsda
 
 /**
- * An object containing nutrient information from multiple sources
- * @param chomp An array containing an object for each nutrient data point
- * @param usda An array containing an object for each nutrient data point as found in the USDA database
+ * An object containing information for a specific nutrient found in this food item
+ * @param name Nutrient name
+ * @param per100g Amount of the nutrient per 100g of food
+ * @param measurementUnit The unit used for the measure of this nutrient
+ * @param rank Nutrient rank
+ * @param dataPoints Number of observations on which the value is based
+ * @param description Description of the nutrient source
  */
 data class BrandedFoodObjectNutrients (
 
-    /* An array containing an object for each nutrient data point */
-    val chomp: kotlin.Array<BrandedFoodObjectNutrientsChomp>? = null,
-    /* An array containing an object for each nutrient data point as found in the USDA database */
-    val usda: kotlin.Array<BrandedFoodObjectNutrientsUsda>? = null
+    /* Nutrient name */
+    val name: kotlin.String? = null,
+    /* Amount of the nutrient per 100g of food */
+    val per100g: java.math.BigDecimal? = null,
+    /* The unit used for the measure of this nutrient */
+    val measurementUnit: kotlin.String? = null,
+    /* Nutrient rank */
+    val rank: kotlin.Int? = null,
+    /* Number of observations on which the value is based */
+    val dataPoints: kotlin.Int? = null,
+    /* Description of the nutrient source */
+    val description: kotlin.String? = null
 ) {
 }

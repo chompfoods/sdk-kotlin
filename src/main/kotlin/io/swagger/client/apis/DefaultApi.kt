@@ -46,34 +46,6 @@ class DefaultApi(basePath: kotlin.String = "https://chompthis.com/api/v2") : Api
     }
 
     /**
-     * Get a branded food item using an ID number
-     * ## Get data for a branded food using Chomp&#x27;s internal ID number.  **Example** &gt; &#x60;&#x60;&#x60;https://chompthis.com/api/v2/food/branded/id.php?api_key&#x3D;API_KEY&amp;id&#x3D;ID&#x60;&#x60;&#x60;  **Tips**   * Find a food&#x27;s ID by using our **[food lookup tool](https://chompthis.com/api/lookup.php)**.   * Alternatively, set the \&quot;source\&quot; parameter to \&quot;USDA\&quot; and use the food&#x27;s FDC ID. 
-     * @param id #### The ID number of a branded food item.  **Example #1: Using Chomp ID** &gt; &#x60;&#x60;&#x60;&amp;id&#x3D;15&#x60;&#x60;&#x60;  **Example #2: Using FDC ID** &gt; &#x60;&#x60;&#x60;&amp;id&#x3D;FDC_ID&amp;source&#x3D;USDA&#x60;&#x60;&#x60;  
-     * @param source #### Configure the endpoint to accept food IDs from various data sources. This endpoint defaults to Chomp but can accept FDC IDs.  **Example** &gt; &#x60;&#x60;&#x60;&amp;source&#x3D;Chomp&#x60;&#x60;&#x60;  **Tips**   * Pass in &#x60;&#x60;&#x60;&amp;source&#x3D;USDA&#x60;&#x60;&#x60; if you want to look up food items using a USDA FDC ID.  (optional)
-     * @return BrandedFoodObject
-     */
-    @Suppress("UNCHECKED_CAST")
-    fun foodBrandedIdPhpGet(id: kotlin.Int, source: kotlin.String? = null): BrandedFoodObject {
-        val localVariableQuery: MultiValueMap = mapOf("id" to listOf("$id"), "source" to listOf("$source"))
-        val localVariableConfig = RequestConfig(
-                RequestMethod.GET,
-                "/food/branded/id.php", query = localVariableQuery
-        )
-        val response = request<BrandedFoodObject>(
-                localVariableConfig
-        )
-
-        return when (response.responseType) {
-            ResponseType.Success -> (response as Success<*>).data as BrandedFoodObject
-            ResponseType.Informational -> TODO()
-            ResponseType.Redirection -> TODO()
-            ResponseType.ClientError -> throw ClientException((response as ClientError<*>).body as? String ?: "Client error")
-            ResponseType.ServerError -> throw ServerException((response as ServerError<*>).message ?: "Server error")
-            else -> throw kotlin.IllegalStateException("Undefined ResponseType.")
-        }
-    }
-
-    /**
      * Get a branded food item by name
      * ## Search for branded food items by name.  **Example** &gt; &#x60;&#x60;&#x60;https://chompthis.com/api/v2/food/branded/name.php?api_key&#x3D;API_KEY&amp;name&#x3D;NAME&#x60;&#x60;&#x60;  **Tips**   * Get started by using our **[food lookup tool](https://chompthis.com/api/lookup.php)**.  &gt; This API endpoint is only available to Standard and Premium API subscribers. Please consider upgrading your subscription if you are subscribed to the Limited plan. **[Read this](https://desk.zoho.com/portal/chompthis/kb/articles/can-i-upgrade-downgrade-my-subscription)** if you aren&#x27;t sure how to upgrade your subscription. 
      * @param name #### Search for branded food items using a general food name keyword. This does not have to exactly match the \&quot;official\&quot; name for the food.  **Example** &gt; &#x60;&#x60;&#x60;&amp;name&#x3D;Starburst&#x60;&#x60;&#x60;  

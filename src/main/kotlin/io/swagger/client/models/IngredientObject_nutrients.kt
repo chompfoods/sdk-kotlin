@@ -11,15 +11,41 @@
 */
 package io.swagger.client.models
 
-import io.swagger.client.models.BrandedFoodObjectNutrientsUsda
 
 /**
- * An object containing nutrient information from each source
- * @param usda An array containing an object for each nutrient data point as found in the USDA database
+ * An object containing information for a specific nutrient found in this food item
+ * @param name Nutrient name
+ * @param per100g Amount of the nutrient per 100g of food
+ * @param measurementUnit The unit used for the measure of this nutrient
+ * @param min Minimum nutrient value
+ * @param max Maximum nutrient value
+ * @param median Median nutrient value
+ * @param rank Nutrient rank
+ * @param dataPoints Number of observations on which the value is based
+ * @param footnote Comments on any unusual aspect of the food nutrient. Examples might include why a nutrient value is different than typically expected.
+ * @param description Description of the nutrient source
  */
 data class IngredientObjectNutrients (
 
-    /* An array containing an object for each nutrient data point as found in the USDA database */
-    val usda: kotlin.Array<BrandedFoodObjectNutrientsUsda>? = null
+    /* Nutrient name */
+    val name: kotlin.String? = null,
+    /* Amount of the nutrient per 100g of food */
+    val per100g: java.math.BigDecimal? = null,
+    /* The unit used for the measure of this nutrient */
+    val measurementUnit: kotlin.String? = null,
+    /* Minimum nutrient value */
+    val min: java.math.BigDecimal? = null,
+    /* Maximum nutrient value */
+    val max: java.math.BigDecimal? = null,
+    /* Median nutrient value */
+    val median: java.math.BigDecimal? = null,
+    /* Nutrient rank */
+    val rank: kotlin.Int? = null,
+    /* Number of observations on which the value is based */
+    val dataPoints: kotlin.Int? = null,
+    /* Comments on any unusual aspect of the food nutrient. Examples might include why a nutrient value is different than typically expected. */
+    val footnote: kotlin.String? = null,
+    /* Description of the nutrient source */
+    val description: kotlin.String? = null
 ) {
 }
