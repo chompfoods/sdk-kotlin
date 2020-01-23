@@ -28,4 +28,3 @@ Name | Type | Description | Notes
 **vitamins** | [**kotlin.Array&lt;kotlin.String&gt;**](.md) | An array of vitamins that are found in this item |  [optional]
 **description** | [**kotlin.String**](.md) | A description of this item |  [optional]
 **keywords** | [**kotlin.Array&lt;kotlin.String&gt;**](.md) | An array of keywords that can be used to describe this item |  [optional]
-**footnote** | [**kotlin.String**](.md) | Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. |  [optional]

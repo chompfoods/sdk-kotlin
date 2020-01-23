@@ -48,7 +48,6 @@ import io.swagger.client.models.BrandedFoodObjectServing
  * @param vitamins An array of vitamins that are found in this item
  * @param description A description of this item
  * @param keywords An array of keywords that can be used to describe this item
- * @param footnote Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.
  */
 data class BrandedFoodObjectItems (
 
@@ -92,8 +91,6 @@ data class BrandedFoodObjectItems (
     /* A description of this item */
     val description: kotlin.String? = null,
     /* An array of keywords that can be used to describe this item */
-    val keywords: kotlin.Array<kotlin.String>? = null,
-    /* Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
-    val footnote: kotlin.String? = null
+    val keywords: kotlin.Array<kotlin.String>? = null
 ) {
 }
