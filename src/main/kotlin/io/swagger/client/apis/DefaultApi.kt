@@ -123,7 +123,7 @@ class DefaultApi(basePath: kotlin.String = "https://chompthis.com/api/v2") : Api
      * @return IngredientObject
      */
     @Suppress("UNCHECKED_CAST")
-    fun foodIngredientSearchPhpGet(find: kotlin.Int, raw: kotlin.Boolean? = null, limit: kotlin.Int? = null): IngredientObject {
+    fun foodIngredientSearchPhpGet(find: kotlin.String, raw: kotlin.Boolean? = null, limit: kotlin.Int? = null): IngredientObject {
         val localVariableQuery: MultiValueMap = mapOf("find" to listOf("$find"), "raw" to listOf("$raw"), "limit" to listOf("$limit"))
         val localVariableConfig = RequestConfig(
                 RequestMethod.GET,
