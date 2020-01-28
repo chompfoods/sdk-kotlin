@@ -27,6 +27,8 @@ import io.swagger.client.models.IngredientObjectPortions
  * @param portions An array of objects containing information on discrete amounts of a food found in this item
  * @param commonName Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")
  * @param footnote Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.
+ * @param searchTerm The original search term that found this food item.
+ * @param score A value that represents how similar the name of this food item is to the original search term.
  */
 data class IngredientObjectItems (
 
@@ -45,6 +47,10 @@ data class IngredientObjectItems (
     /* Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\") */
     val commonName: kotlin.String? = null,
     /* Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
-    val footnote: kotlin.String? = null
+    val footnote: kotlin.String? = null,
+    /* The original search term that found this food item. */
+    val searchTerm: kotlin.String? = null,
+    /* A value that represents how similar the name of this food item is to the original search term. */
+    val score: kotlin.String? = null
 ) {
 }

@@ -12,3 +12,5 @@ Name | Type | Description | Notes
 **portions** | [**kotlin.Array&lt;IngredientObjectPortions&gt;**](IngredientObjectPortions.md) | An array of objects containing information on discrete amounts of a food found in this item |  [optional]
 **commonName** | [**kotlin.String**](.md) | Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \&quot;BRAND&#x27;s Spicy Enchilada\&quot; the common name may be \&quot;Chicken enchilada\&quot;) |  [optional]
 **footnote** | [**kotlin.String**](.md) | Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. |  [optional]
+**searchTerm** | [**kotlin.String**](.md) | The original search term that found this food item. |  [optional]
+**score** | [**kotlin.String**](.md) | A value that represents how similar the name of this food item is to the original search term. |  [optional]
