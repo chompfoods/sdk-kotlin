@@ -11,7 +11,6 @@
 */
 package io.swagger.client.models
 
-import io.swagger.client.models.BrandedFoodObjectDietLabels
 import io.swagger.client.models.IngredientObjectCalorieConversionFactor
 import io.swagger.client.models.IngredientObjectComponents
 import io.swagger.client.models.IngredientObjectNutrients
@@ -24,11 +23,9 @@ import io.swagger.client.models.IngredientObjectPortions
  * @param nutrients An array containing nutrient informatio objects for this food item
  * @param calorieConversionFactor 
  * @param proteinConversionFactor The multiplication factor used to calculate protein from nitrogen
- * @param dietLabels 
  * @param components An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)
  * @param portions An array of objects containing information on discrete amounts of a food found in this item
  * @param commonName Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")
- * @param description A description of this item
  * @param footnote Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.
  */
 data class IngredientObjectItems (
@@ -41,15 +38,12 @@ data class IngredientObjectItems (
     val calorieConversionFactor: IngredientObjectCalorieConversionFactor? = null,
     /* The multiplication factor used to calculate protein from nitrogen */
     val proteinConversionFactor: java.math.BigDecimal? = null,
-    val dietLabels: BrandedFoodObjectDietLabels? = null,
     /* An array of objects containing the constituent parts of a food (e.g. bone is a component of meat) */
     val components: kotlin.Array<IngredientObjectComponents>? = null,
     /* An array of objects containing information on discrete amounts of a food found in this item */
     val portions: kotlin.Array<IngredientObjectPortions>? = null,
     /* Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\") */
     val commonName: kotlin.String? = null,
-    /* A description of this item */
-    val description: kotlin.String? = null,
     /* Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
     val footnote: kotlin.String? = null
 ) {
