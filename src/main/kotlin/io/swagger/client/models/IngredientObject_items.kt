@@ -1,6 +1,6 @@
 /**
 * Chomp Food Database API Documentation
-* __Important:__   - An __[API key](https://chompthis.com/api/)__ is required for access to this API.   - Get yours at __[https://chompthis.com/api](https://chompthis.com/api/)__.  -----  __Getting Started:__   - __[Subscribe](https://chompthis.com/api/#pricing)__ to the API.   - Scroll down and click the \"__Authorize__\" button.   - Enter your API key into the \"__value__\" input, click the \"__Authorize__\" button, then click the \"__Close__\" button.   - Scroll down to the section titled \"__default__\" and click on the API endpoint you wish to use.   - Click the \"__Try it out__\" button.   - Enter the information the endpoint requires.   - Click the \"__Execute__\" button.  __Example:__    - __[View example](https://raw.githubusercontent.com/chompfoods/examples/master/response-object.json)__ API response object.  -----  __How Do I Find My API Key?__   - Your API key was sent to the email address you used to create your subscription.   - You will also find your API key in the __[Client Center](https://chompthis.com/api/manage.php)__.   - _Read __[this article](https://desk.zoho.com/portal/chompthis/kb/articles/how-do-i-find-my-api-key)__ for more information._  ||| | ------- | -------- | | [Knowledge Base](https://desk.zoho.com/portal/chompthis/kb/chomp) | [Pricing](https://chompthis.com/api/) | | [Attribution](https://chompthis.com/api/docs/attribution.php) | [Cost Calculator](https://chompthis.com/api/cost-calculator.php) | | [Terms & License](https://chompthis.com/api/terms.php) | [Database Search](https://chompthis.com/api/lookup.php) | | [Support](https://chompthis.com/api/ticket-new.php) | [Query Builder](https://chompthis.com/api/build.php) | | [Client Center](https://chompthis.com/api/manage.php) | | 
+* ## Important An **[API key](https://chompthis.com/api/)** is required for access to this API. Get yours at **[https://chompthis.com/api](https://chompthis.com/api/)**.  ### Getting Started   * **[Subscribe](https://chompthis.com/api/#pricing)** to the API.   * Scroll down and click the \"**Authorize**\" button.   * Enter your API key into the \"**value**\" input, click the \"**Authorize**\" button, then click the \"**Close**\" button.   * Scroll down to the section titled \"**default**\" and click on the API endpoint you wish to use.   * Click the \"**Try it out**\" button.   * Enter the information the endpoint requires.   * Click the \"**Execute**\" button.  ### Example    * Branded food response object: **[View example &raquo;](https://raw.githubusercontent.com/chompfoods/examples/master/branded-food-response-object.json)**   * Ingredient response object: **[View example &raquo;](https://raw.githubusercontent.com/chompfoods/examples/master/ingredient-response-object.json)**   * Error response object: **[View example &raquo;](https://raw.githubusercontent.com/chompfoods/examples/master/error-response-object.json)**  ### How Do I Find My API Key?   * Your API key was sent to the email address you used to create your subscription.   * You will also find your API key in the **[Client Center](https://chompthis.com/api/manage.php)**.   * Read **[this article](https://desk.zoho.com/portal/chompthis/kb/articles/how-do-i-find-my-api-key)** for more information.  ### Helpful Links   * **Help & Support**     * [Knowledge Base &raquo;](https://desk.zoho.com/portal/chompthis/kb/chomp)     * [Support &raquo;](https://chompthis.com/api/ticket-new.php)     * [Client Center &raquo;](https://chompthis.com/api/manage.php)   * **Pricing**     * [Subscription Options &raquo;](https://chompthis.com/api/)     * [Cost Calculator &raquo;](https://chompthis.com/api/cost-calculator.php)   * **Guidelines**     * [Terms & License &raquo;](https://chompthis.com/api/terms.php)     * [Attribution &raquo;](https://chompthis.com/api/docs/attribution.php) 
 *
 * OpenAPI spec version: 1.0.0-oas3
 * 
@@ -11,45 +11,46 @@
 */
 package io.swagger.client.models
 
-import io.swagger.client.models.BrandedFoodObjectCalorieConversionFactor
-import io.swagger.client.models.BrandedFoodObjectComponents
-import io.swagger.client.models.BrandedFoodObjectDietLabels
-import io.swagger.client.models.BrandedFoodObjectPortions
+import io.swagger.client.models.IngredientObjectCalorieConversionFactor
+import io.swagger.client.models.IngredientObjectComponents
 import io.swagger.client.models.IngredientObjectNutrients
+import io.swagger.client.models.IngredientObjectPortions
 
 /**
  * An object containing information for this specific item.
  * @param name Item name as provided by brand owner or as shown on packaging
  * @param categories 
- * @param nutrients 
+ * @param nutrients An array containing nutrient informatio objects for this food item
  * @param calorieConversionFactor 
  * @param proteinConversionFactor The multiplication factor used to calculate protein from nitrogen
- * @param dietLabels 
  * @param components An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)
  * @param portions An array of objects containing information on discrete amounts of a food found in this item
- * @param commonName Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")
- * @param description A description of this item
- * @param footnote Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.
+ * @param commonName Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")
+ * @param footnote Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall
+ * @param searchTerm The original search term that found this food item
+ * @param score A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item's name is to the original search term.
  */
 data class IngredientObjectItems (
 
     /* Item name as provided by brand owner or as shown on packaging */
     val name: kotlin.String? = null,
     val categories: kotlin.Array<kotlin.String>? = null,
-    val nutrients: IngredientObjectNutrients? = null,
-    val calorieConversionFactor: BrandedFoodObjectCalorieConversionFactor? = null,
+    /* An array containing nutrient informatio objects for this food item */
+    val nutrients: kotlin.Array<IngredientObjectNutrients>? = null,
+    val calorieConversionFactor: IngredientObjectCalorieConversionFactor? = null,
     /* The multiplication factor used to calculate protein from nitrogen */
     val proteinConversionFactor: java.math.BigDecimal? = null,
-    val dietLabels: BrandedFoodObjectDietLabels? = null,
     /* An array of objects containing the constituent parts of a food (e.g. bone is a component of meat) */
-    val components: kotlin.Array<BrandedFoodObjectComponents>? = null,
+    val components: kotlin.Array<IngredientObjectComponents>? = null,
     /* An array of objects containing information on discrete amounts of a food found in this item */
-    val portions: kotlin.Array<BrandedFoodObjectPortions>? = null,
-    /* Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\") */
+    val portions: kotlin.Array<IngredientObjectPortions>? = null,
+    /* Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\") */
     val commonName: kotlin.String? = null,
-    /* A description of this item */
-    val description: kotlin.String? = null,
-    /* Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall. */
-    val footnote: kotlin.String? = null
+    /* Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall */
+    val footnote: kotlin.String? = null,
+    /* The original search term that found this food item */
+    val searchTerm: kotlin.String? = null,
+    /* A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item's name is to the original search term. */
+    val score: kotlin.String? = null
 ) {
 }

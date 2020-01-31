@@ -13,15 +13,27 @@ package io.swagger.client.models
 
 
 /**
- * An object containing basic packaging information about this item
- * @param quantity Package quantity
- * @param size Package size
+ * An object containing information on a specific food portion found in this item
+ * @param measurementUnit The unit used for measure (e.g. if mesure is 3 tsp, the unit is tsp)
+ * @param description Comments that provide more specificity on the measure. For example, for a pizza measure the dissemination text might be 1 slice is 1/8th of a 14 inch pizza.
+ * @param modifier Qualifier of the measure (e.g. related to food shape or form) (e.g. melted, crushed, diced)
+ * @param gramWeight The weight of the measure in grams
+ * @param dataPoints The number of observations on which the measure is based
+ * @param footnote Comments on any unusual aspects of the measure. Examples might includes caveats on the usage of a measure, or reasons why a measure gram weight is an unexpected value.
  */
-data class BrandedFoodObjectPackage (
+data class IngredientObjectPortions (
 
-    /* Package quantity */
-    val quantity: kotlin.Int? = null,
-    /* Package size */
-    val size: kotlin.String? = null
+    /* The unit used for measure (e.g. if mesure is 3 tsp, the unit is tsp) */
+    val measurementUnit: kotlin.String? = null,
+    /* Comments that provide more specificity on the measure. For example, for a pizza measure the dissemination text might be 1 slice is 1/8th of a 14 inch pizza. */
+    val description: kotlin.String? = null,
+    /* Qualifier of the measure (e.g. related to food shape or form) (e.g. melted, crushed, diced) */
+    val modifier: kotlin.String? = null,
+    /* The weight of the measure in grams */
+    val gramWeight: java.math.BigDecimal? = null,
+    /* The number of observations on which the measure is based */
+    val dataPoints: kotlin.Int? = null,
+    /* Comments on any unusual aspects of the measure. Examples might includes caveats on the usage of a measure, or reasons why a measure gram weight is an unexpected value. */
+    val footnote: kotlin.String? = null
 ) {
 }

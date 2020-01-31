@@ -13,15 +13,24 @@ package io.swagger.client.models
 
 
 /**
- * An object containing basic packaging information about this item
- * @param quantity Package quantity
- * @param size Package size
+ * An object containing information on a specific component of this food item
+ * @param name The kind of component, e.g. bone
+ * @param pctWeight The weight of the component as a percentage of the total weight of the food
+ * @param gramWeight The weight of the component in grams
+ * @param isRefuse Whether the component is refuse, i.e. not edible
+ * @param dataPoints The number of obersvations on which the measure is based
  */
-data class BrandedFoodObjectPackage (
+data class IngredientObjectComponents (
 
-    /* Package quantity */
-    val quantity: kotlin.Int? = null,
-    /* Package size */
-    val size: kotlin.String? = null
+    /* The kind of component, e.g. bone */
+    val name: kotlin.String? = null,
+    /* The weight of the component as a percentage of the total weight of the food */
+    val pctWeight: java.math.BigDecimal? = null,
+    /* The weight of the component in grams */
+    val gramWeight: java.math.BigDecimal? = null,
+    /* Whether the component is refuse, i.e. not edible */
+    val isRefuse: kotlin.Boolean? = null,
+    /* The number of obersvations on which the measure is based */
+    val dataPoints: kotlin.Int? = null
 ) {
 }

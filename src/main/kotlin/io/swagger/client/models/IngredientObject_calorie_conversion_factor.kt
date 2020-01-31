@@ -13,15 +13,18 @@ package io.swagger.client.models
 
 
 /**
- * An object containing basic packaging information about this item
- * @param quantity Package quantity
- * @param size Package size
+ * An object containing the multiplication factors to be used when calculating energy from macronutrients for a specific food.
+ * @param proteinValue The multiplication factor for protein
+ * @param fatValue The multiplication factor for fat
+ * @param carbohydrateValue The multiplication factor for carbohydrates
  */
-data class BrandedFoodObjectPackage (
+data class IngredientObjectCalorieConversionFactor (
 
-    /* Package quantity */
-    val quantity: kotlin.Int? = null,
-    /* Package size */
-    val size: kotlin.String? = null
+    /* The multiplication factor for protein */
+    val proteinValue: java.math.BigDecimal? = null,
+    /* The multiplication factor for fat */
+    val fatValue: java.math.BigDecimal? = null,
+    /* The multiplication factor for carbohydrates */
+    val carbohydrateValue: java.math.BigDecimal? = null
 ) {
 }

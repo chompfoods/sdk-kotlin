@@ -3,5 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**chomp** | [**kotlin.Array&lt;BrandedFoodObjectNutrientsChomp&gt;**](BrandedFoodObjectNutrientsChomp.md) | An array containing an object for each nutrient data point |  [optional]
-**usda** | [**kotlin.Array&lt;BrandedFoodObjectNutrientsUsda&gt;**](BrandedFoodObjectNutrientsUsda.md) | An array containing an object for each nutrient data point as found in the USDA database |  [optional]
+**name** | [**kotlin.String**](.md) | Nutrient name |  [optional]
+**per100g** | [**java.math.BigDecimal**](java.math.BigDecimal.md) | Amount of the nutrient per 100g of food |  [optional]
+**measurementUnit** | [**kotlin.String**](.md) | The unit used for the measure of this nutrient |  [optional]
+**rank** | [**kotlin.Int**](.md) | Nutrient rank |  [optional]
+**dataPoints** | [**kotlin.Int**](.md) | Number of observations on which the value is based |  [optional]
+**description** | [**kotlin.String**](.md) | Description of the nutrient source |  [optional]
