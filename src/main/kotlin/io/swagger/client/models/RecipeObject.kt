@@ -11,26 +11,15 @@
  */
 package io.swagger.client.models
 
+import io.swagger.client.models.RecipeObjectItems
 
 /**
- * An object containing information on this item's compatibility with Gluten Free diets
- * @param name Diet name
- * @param isCompatible Boolean describing if this item is compatible with this diet
- * @param compatibilityLevel Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility
- * @param confidence Boolean that indicates if we are confident in how this item is graded for this diet
- * @param confidenceDescription Description of our confidence that this item was graded correctly
+ * Please read the description of each field in this API response object example. By default, the value of each field is **null**. This indicates an unknown state or that no data exists.
+ * @param items An array containing an object for each individual item returned by your API call.
  */
-data class BrandedFoodObjectDietLabelsGlutenFree (
+data class RecipeObject (
 
-    /* Diet name */
-    val name: kotlin.String? = null,
-    /* Boolean describing if this item is compatible with this diet */
-    val isCompatible: kotlin.Boolean? = null,
-    /* Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility */
-    val compatibilityLevel: kotlin.Int? = null,
-    /* Boolean that indicates if we are confident in how this item is graded for this diet */
-    val confidence: kotlin.Int? = null,
-    /* Description of our confidence that this item was graded correctly */
-    val confidenceDescription: kotlin.String? = null
+    /* An array containing an object for each individual item returned by your API call. */
+    val items: kotlin.Array<RecipeObjectItems>? = null
 ) {
 }

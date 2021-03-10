@@ -13,24 +13,21 @@ package io.swagger.client.models
 
 
 /**
- * An object containing information on this item's compatibility with Gluten Free diets
- * @param name Diet name
- * @param isCompatible Boolean describing if this item is compatible with this diet
- * @param compatibilityLevel Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility
- * @param confidence Boolean that indicates if we are confident in how this item is graded for this diet
- * @param confidenceDescription Description of our confidence that this item was graded correctly
+ * An object containing recipe attributes
+ * @param prepTime The time it takes to prep this recipe
+ * @param totalTime The total time it takes to make this recipe
+ * @param servings The number of servings this recipe makes
+ * @param servingSize The size of each serving
  */
-data class BrandedFoodObjectDietLabelsGlutenFree (
+data class RecipeObjectAttributes (
 
-    /* Diet name */
-    val name: kotlin.String? = null,
-    /* Boolean describing if this item is compatible with this diet */
-    val isCompatible: kotlin.Boolean? = null,
-    /* Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility */
-    val compatibilityLevel: kotlin.Int? = null,
-    /* Boolean that indicates if we are confident in how this item is graded for this diet */
-    val confidence: kotlin.Int? = null,
-    /* Description of our confidence that this item was graded correctly */
-    val confidenceDescription: kotlin.String? = null
+    /* The time it takes to prep this recipe */
+    val prepTime: kotlin.String? = null,
+    /* The total time it takes to make this recipe */
+    val totalTime: kotlin.String? = null,
+    /* The number of servings this recipe makes */
+    val servings: kotlin.String? = null,
+    /* The size of each serving */
+    val servingSize: kotlin.String? = null
 ) {
 }

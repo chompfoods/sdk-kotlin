@@ -13,24 +13,30 @@ package io.swagger.client.models
 
 
 /**
- * An object containing information on this item's compatibility with Gluten Free diets
- * @param name Diet name
- * @param isCompatible Boolean describing if this item is compatible with this diet
- * @param compatibilityLevel Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility
- * @param confidence Boolean that indicates if we are confident in how this item is graded for this diet
- * @param confidenceDescription Description of our confidence that this item was graded correctly
+ * An object containing this recipe's image URLs
+ * @param extraLarge Extra large recipe image
+ * @param large Large recipe image
+ * @param standard Standard recipe image
+ * @param gridView Grid view recipe image
+ * @param small Small recipe image
+ * @param thumbnail Thumbnail recipe image
+ * @param extraSmall Extra small recipe image
  */
-data class BrandedFoodObjectDietLabelsGlutenFree (
+data class RecipeObjectMetaImages (
 
-    /* Diet name */
-    val name: kotlin.String? = null,
-    /* Boolean describing if this item is compatible with this diet */
-    val isCompatible: kotlin.Boolean? = null,
-    /* Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility */
-    val compatibilityLevel: kotlin.Int? = null,
-    /* Boolean that indicates if we are confident in how this item is graded for this diet */
-    val confidence: kotlin.Int? = null,
-    /* Description of our confidence that this item was graded correctly */
-    val confidenceDescription: kotlin.String? = null
+    /* Extra large recipe image */
+    val extraLarge: kotlin.String? = null,
+    /* Large recipe image */
+    val large: kotlin.String? = null,
+    /* Standard recipe image */
+    val standard: kotlin.String? = null,
+    /* Grid view recipe image */
+    val gridView: kotlin.String? = null,
+    /* Small recipe image */
+    val small: kotlin.String? = null,
+    /* Thumbnail recipe image */
+    val thumbnail: kotlin.String? = null,
+    /* Extra small recipe image */
+    val extraSmall: kotlin.String? = null
 ) {
 }

@@ -11,26 +11,43 @@
  */
 package io.swagger.client.models
 
+import io.swagger.client.models.RecipeObjectAttributes
+import io.swagger.client.models.RecipeObjectIngredients
+import io.swagger.client.models.RecipeObjectMeta
+import io.swagger.client.models.RecipeObjectNutrients
 
 /**
- * An object containing information on this item's compatibility with Gluten Free diets
- * @param name Diet name
- * @param isCompatible Boolean describing if this item is compatible with this diet
- * @param compatibilityLevel Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility
- * @param confidence Boolean that indicates if we are confident in how this item is graded for this diet
- * @param confidenceDescription Description of our confidence that this item was graded correctly
+ * An object containing information for this specific item.
+ * @param id Unique recipe ID
+ * @param title Recipe title
+ * @param meta 
+ * @param categories 
+ * @param author The author of this recipe. You must attribute this author when displaying this recipe.
+ * @param keywords 
+ * @param topics 
+ * @param attributes 
+ * @param ingredients An array containing this recipe's ingredients
+ * @param baseIngredients 
+ * @param nutrients 
+ * @param diabeticExchanges 
  */
-data class BrandedFoodObjectDietLabelsGlutenFree (
+data class RecipeObjectItems (
 
-    /* Diet name */
-    val name: kotlin.String? = null,
-    /* Boolean describing if this item is compatible with this diet */
-    val isCompatible: kotlin.Boolean? = null,
-    /* Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility */
-    val compatibilityLevel: kotlin.Int? = null,
-    /* Boolean that indicates if we are confident in how this item is graded for this diet */
-    val confidence: kotlin.Int? = null,
-    /* Description of our confidence that this item was graded correctly */
-    val confidenceDescription: kotlin.String? = null
+    /* Unique recipe ID */
+    val id: kotlin.String? = null,
+    /* Recipe title */
+    val title: kotlin.String? = null,
+    val meta: RecipeObjectMeta? = null,
+    val categories: kotlin.Array<kotlin.String>? = null,
+    /* The author of this recipe. You must attribute this author when displaying this recipe. */
+    val author: kotlin.String? = null,
+    val keywords: kotlin.Array<kotlin.String>? = null,
+    val topics: kotlin.Array<kotlin.String>? = null,
+    val attributes: RecipeObjectAttributes? = null,
+    /* An array containing this recipe's ingredients */
+    val ingredients: kotlin.Array<RecipeObjectIngredients>? = null,
+    val baseIngredients: kotlin.Array<kotlin.String>? = null,
+    val nutrients: RecipeObjectNutrients? = null,
+    val diabeticExchanges: kotlin.Array<kotlin.String>? = null
 ) {
 }

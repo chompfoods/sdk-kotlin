@@ -11,26 +11,32 @@
  */
 package io.swagger.client.models
 
+import io.swagger.client.models.RecipeObjectMetaImages
 
 /**
- * An object containing information on this item's compatibility with Gluten Free diets
- * @param name Diet name
- * @param isCompatible Boolean describing if this item is compatible with this diet
- * @param compatibilityLevel Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility
- * @param confidence Boolean that indicates if we are confident in how this item is graded for this diet
- * @param confidenceDescription Description of our confidence that this item was graded correctly
+ * An object containing this item's compatibility grades for each supported diet
+ * @param url URL to the recipe. You must link back to the recipe when displaying it.
+ * @param images 
+ * @param source The source of the recipe. You must attribute this source when displaying this recipe.
+ * @param cuisine This recipe's cuisine
+ * @param created The date when this recipe was created
+ * @param modified The date when this recipe was most recently modified
+ * @param nutrientsNotice Additional information about this recipe's nutrients
  */
-data class BrandedFoodObjectDietLabelsGlutenFree (
+data class RecipeObjectMeta (
 
-    /* Diet name */
-    val name: kotlin.String? = null,
-    /* Boolean describing if this item is compatible with this diet */
-    val isCompatible: kotlin.Boolean? = null,
-    /* Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility */
-    val compatibilityLevel: kotlin.Int? = null,
-    /* Boolean that indicates if we are confident in how this item is graded for this diet */
-    val confidence: kotlin.Int? = null,
-    /* Description of our confidence that this item was graded correctly */
-    val confidenceDescription: kotlin.String? = null
+    /* URL to the recipe. You must link back to the recipe when displaying it. */
+    val url: kotlin.String? = null,
+    val images: RecipeObjectMetaImages? = null,
+    /* The source of the recipe. You must attribute this source when displaying this recipe. */
+    val source: kotlin.String? = null,
+    /* This recipe's cuisine */
+    val cuisine: kotlin.String? = null,
+    /* The date when this recipe was created */
+    val created: kotlin.String? = null,
+    /* The date when this recipe was most recently modified */
+    val modified: kotlin.String? = null,
+    /* Additional information about this recipe's nutrients */
+    val nutrientsNotice: kotlin.String? = null
 ) {
 }

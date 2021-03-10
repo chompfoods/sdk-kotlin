@@ -11,26 +11,27 @@
  */
 package io.swagger.client.models
 
+import io.swagger.client.models.RecipeObjectNutrientsCalories
 
 /**
- * An object containing information on this item's compatibility with Gluten Free diets
- * @param name Diet name
- * @param isCompatible Boolean describing if this item is compatible with this diet
- * @param compatibilityLevel Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility
- * @param confidence Boolean that indicates if we are confident in how this item is graded for this diet
- * @param confidenceDescription Description of our confidence that this item was graded correctly
+ * An object containing nutrient information for this recipe
+ * @param calories An array containing information for calories found in this recipe
+ * @param dailyValues An array containing information for this recipe's daily recommended value of certain nutrients
+ * @param fat An array containing information for fat found in this recipe
+ * @param carbs An array containing information for carbs found in this recipe
+ * @param vitamins An array containing information for vitamins found in this recipe
  */
-data class BrandedFoodObjectDietLabelsGlutenFree (
+data class RecipeObjectNutrients (
 
-    /* Diet name */
-    val name: kotlin.String? = null,
-    /* Boolean describing if this item is compatible with this diet */
-    val isCompatible: kotlin.Boolean? = null,
-    /* Numeric representation of how compatible this item is with this diet. Higher values indicate more compatibility */
-    val compatibilityLevel: kotlin.Int? = null,
-    /* Boolean that indicates if we are confident in how this item is graded for this diet */
-    val confidence: kotlin.Int? = null,
-    /* Description of our confidence that this item was graded correctly */
-    val confidenceDescription: kotlin.String? = null
+    /* An array containing information for calories found in this recipe */
+    val calories: kotlin.Array<RecipeObjectNutrientsCalories>? = null,
+    /* An array containing information for this recipe's daily recommended value of certain nutrients */
+    val dailyValues: kotlin.Array<RecipeObjectNutrientsCalories>? = null,
+    /* An array containing information for fat found in this recipe */
+    val fat: kotlin.Array<RecipeObjectNutrientsCalories>? = null,
+    /* An array containing information for carbs found in this recipe */
+    val carbs: kotlin.Array<RecipeObjectNutrientsCalories>? = null,
+    /* An array containing information for vitamins found in this recipe */
+    val vitamins: kotlin.Array<RecipeObjectNutrientsCalories>? = null
 ) {
 }

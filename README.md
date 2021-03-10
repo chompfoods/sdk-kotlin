@@ -1,4 +1,4 @@
-# io.swagger.client - Kotlin client library for Chomp Food Database API Documentation
+# io.swagger.client - Kotlin client library for Chomp Food &amp; Recipe Database API Documentation
 
 ## Requires
 
@@ -39,6 +39,10 @@ Class | Method | HTTP request | Description
 *DefaultApi* | [**foodBrandedNamePhpGet**](docs/DefaultApi.md#foodbrandednamephpget) | **GET** /food/branded/name.php | Get a branded food item by name
 *DefaultApi* | [**foodBrandedSearchPhpGet**](docs/DefaultApi.md#foodbrandedsearchphpget) | **GET** /food/branded/search.php | Get data for branded food items using various search parameters
 *DefaultApi* | [**foodIngredientSearchPhpGet**](docs/DefaultApi.md#foodingredientsearchphpget) | **GET** /food/ingredient/search.php | Get raw/generic food ingredient item(s)
+*DefaultApi* | [**recipeIdPhpGet**](docs/DefaultApi.md#recipeidphpget) | **GET** /recipe/id.php | Get a recipe by ID
+*DefaultApi* | [**recipeIngredientPhpGet**](docs/DefaultApi.md#recipeingredientphpget) | **GET** /recipe/ingredient.php | Get recipes using a list of ingredients
+*DefaultApi* | [**recipeRandomPhpGet**](docs/DefaultApi.md#reciperandomphpget) | **GET** /recipe/random.php | Get random popular recipes
+*DefaultApi* | [**recipeSearchPhpGet**](docs/DefaultApi.md#recipesearchphpget) | **GET** /recipe/search.php | Get recipes using a title and optional filters
 
 <a name="documentation-for-models"></a>
 ## Documentation for Models
@@ -64,6 +68,14 @@ Class | Method | HTTP request | Description
  - [io.swagger.client.models.IngredientObjectItems](docs/IngredientObjectItems.md)
  - [io.swagger.client.models.IngredientObjectNutrients](docs/IngredientObjectNutrients.md)
  - [io.swagger.client.models.IngredientObjectPortions](docs/IngredientObjectPortions.md)
+ - [io.swagger.client.models.RecipeObject](docs/RecipeObject.md)
+ - [io.swagger.client.models.RecipeObjectAttributes](docs/RecipeObjectAttributes.md)
+ - [io.swagger.client.models.RecipeObjectIngredients](docs/RecipeObjectIngredients.md)
+ - [io.swagger.client.models.RecipeObjectItems](docs/RecipeObjectItems.md)
+ - [io.swagger.client.models.RecipeObjectMeta](docs/RecipeObjectMeta.md)
+ - [io.swagger.client.models.RecipeObjectMetaImages](docs/RecipeObjectMetaImages.md)
+ - [io.swagger.client.models.RecipeObjectNutrients](docs/RecipeObjectNutrients.md)
+ - [io.swagger.client.models.RecipeObjectNutrientsCalories](docs/RecipeObjectNutrientsCalories.md)
 
 <a name="documentation-for-authorization"></a>
 ## Documentation for Authorization
